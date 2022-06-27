@@ -352,12 +352,9 @@ function createMovieSection(movies)
   
   });
 
-
 }
 
 //createMovieSection(movies);
-
-
 
 
 function getSFmovies()
