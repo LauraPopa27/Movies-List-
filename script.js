@@ -180,75 +180,7 @@ const movies = [
     },
   ];
   
-  // SECTION 1
-
-  // 1) Movie titles
-
-  let movieTitles= movies.map((movie) => movie.title);
-  console.log('Movie titles: ',movieTitles);
   
-
-  // 2) Movie title and description
-
-  let movieTitleDesc= movies.map((movie) => {
-    // return [movie.title, movie.description];
-    return {title: movie.title, description: movie.description};
-  });
-
-  console.log('Movie title and description: ', movieTitleDesc);
-
-  // 3) Movie title, description, genre
-
-  let movieTitleDescGenre= movies.map((movie) =>{
-   return {title: movie.title, description: movie.description, genre: movie.genre.name};
-  });
-
-  console.log('Movie title, description, genre: ',movieTitleDescGenre);
-  
-  // 4) Movie title, description, genre name, director name
-
-  let movieTitleDescGenreDir= movies.map((movie) =>{
-    return {title: movie.title, description: movie.description, genre: movie.genre.name, director: movie.director.name};
-   });
-
-   console.log('Movie title, description, genre name, director name: ',movieTitleDescGenreDir);
-
-   // SECTION 2
-
-// 1) Get all movies with Science Fiction genre
-
-   let SFmovies= movies.filter(movie => movie.genre.name=== 'Science Fiction');
-
-   console.log('Science Fiction movies: ', SFmovies);
-
-
-// 2) Get all movies with Adventure genre
-
-let adventureMovies= movies.filter(movie => movie.genre.name=== 'Adventure');
-
-console.log('Adventure movies: ', adventureMovies);
-
-
-// 3) Get all movies with Fantasy genre
-
-let fantasyMovies= movies.filter(movie => movie.genre.name=== 'Fantasy');
-
-console.log('Fantasy movies: ', fantasyMovies);
-
-
-// 4) Get all movies that were realeased later then 2007
-
-let movies2007 = movies.filter(movie => movie.release > 2007);
-
-console.log('Movies that were realeased later then 2007: ', movies2007);
-
-// 5) Get all adventure genre movies that were released later then 2011
-
-let adventureMovies2011 = movies.filter(movie => movie.genre.name=== 'Adventure' && movie.release > 2011);
-
-console.log('Adventure movies that were released later then 2011: ', adventureMovies2011);
-
-
 // SECTION 3
 
 //const movieList= [...movies];
@@ -302,7 +234,7 @@ console.log('Adventure movies that were released later then 2011: ', adventureMo
 // });
 
 
-////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
 
 let container= document.querySelector('.content-container');
 
