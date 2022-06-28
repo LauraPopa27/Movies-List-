@@ -295,6 +295,7 @@ function getSFmovies()
     return movie.genre.name=== "Science Fiction";
   });
 
+  container.innerHTML='';
 
   createMovieSection(SF);
 
@@ -306,6 +307,8 @@ function getAdventureMovies()
     return movie.genre.name=== "Adventure";
   });
 
+  container.innerHTML='';
+
   createMovieSection(adventure);
 
 }
@@ -315,6 +318,8 @@ function getFantasyMovies()
   const fantasy= movies.filter((movie)=> {
     return movie.genre.name=== "Fantasy";
   });
+
+  container.innerHTML='';
 
   createMovieSection(fantasy);
   
